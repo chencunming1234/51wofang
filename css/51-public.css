@@ -1,0 +1,349 @@
+/*导航的白色背景*/
+.nav-wrap{
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1)
+}
+.clearfix::after{
+    content:"";
+    height: 0;
+    zoom: 1;
+    clear: both;
+    display: block;
+}
+/*导航居中*/
+.main-header{
+    width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+}
+.main-logo a{
+    background: url(../images/logo-simple@2x.svg) no-repeat;
+    background-size:100%; 
+    float: left;width: 144px;height: 30px;margin-top: 18px;
+}
+.main-header > .main-nav{
+    float: right;
+}
+.main-nav> li{
+    float: left;
+}
+.main-nav > li:hover a{
+    color: #68b4f2;
+}
+.main-nav> li >a{
+    color: #2d404d; padding: 0 20px;line-height: 65px;
+}
+/*导航中的下拉菜单*/
+.head-dropdown{
+    border: 1px solid #ccd2d6;width: 118px;
+    position:absolute;top: 50px;
+    border-radius: 0 3px 3px 3px;
+    padding-top: 10px;padding-bottom: 10px;
+    display: none;
+    background: white;
+    z-index: 10;
+}
+.li-dropdown{
+    position: relative;
+}
+.li-dropdown:hover .head-dropdown{
+    display: block;
+}
+.li-dropdown:hover .head-dropdown::before{
+    display: block;
+}
+.li-dropdown:hover .head-dropdown a{
+    color: #677c8b;
+}
+.head-dropdown::before{
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: -1px;
+    width: 96px;
+    height: 38px;
+    border: 1px solid #ccd2d6;
+    border-bottom:1px solid white;
+    z-index: 10;
+    border-radius: 3px 3px 0 0;
+    display: none;
+}
+.li-dropdown::after{
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    font-family: "FontAwesome";
+    content: '\f0dd';
+    font-size: 12px;
+    line-height: 1;
+    z-index: 99995;
+}
+.head-dropdown a{
+    height: 38px;line-height: 30px;padding-left: 20px;display: block;
+    color: #677c8b;
+}
+.head-dropdown a:hover{
+    background: #eee;
+    color: #68b4f2!important;
+}
+/*导航中的登陆注册按钮*/
+.main-nav .regist a{
+    border: 1px solid #68b4f2;
+    height: 14px;
+    color: #68b4f2;
+    padding: 3px 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.main-nav .regist:hover a{
+    background: #68b4f2;    
+    color: #fff;
+}
+.main-nav .login a{
+    border: 1px solid #68b4f2;
+    height: 14px;
+    color: #68b4f2;
+    padding: 3px 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.main-nav .login:hover a{
+    background: #68b4f2;   
+    color: #fff;
+}
+/*mmenu的菜单*/
+#menu-mark{
+    display: none;
+    width: 70px;height: 40px;
+    position: relative;
+    text-align: right;
+}
+
+/*底部*/
+    .main-footer{
+        width: 100%;
+        background: #2d404d;
+        padding-top: 40px;
+        position: relative;
+    }
+    .main-foot-top{
+        width: 1200px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .main-footer-ul li{
+        float: left;
+        width: 130px;
+    }
+    .main-footer-ul li:last-child{
+        width: 350px;
+    }
+    .main-footer-ul li a{
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        color: #818f99;
+        font-size: 14px;
+    }
+    .main-footer dt a{
+        color: #d7e0e7;
+        font-size: 16px;
+    }
+    .main-footer-ul dd{
+        color: #818f99;
+    }
+    .main-footer-ul dd a:hover{
+        color: #529edc;
+    }
+    .main-footer-img-code{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .main-footer-img-code span{
+        display: inline-block;
+        text-align: center;
+        color: #ccd2d6;
+    }
+    .main-footer-img-code span:last-child{
+        margin-left: 40px;
+    }
+    .main-footer-img-code img{
+        width: 130px;
+        display: block;
+    }
+    .main-footer-ul::after{
+        content:"";
+        height: 0;
+        zoom: 1;
+        clear: both;
+        display: block;
+    }
+    .main-footer::after{
+        position: absolute;
+        bottom: 70px;
+        width: 100%;
+        border-top: 1px solid #1f2d39;
+        content: '';
+    }
+    .main-footer-bottom{
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom:15px;
+    }
+    .main-footer-bottom::after{
+        content:"";
+        height: 0;
+        zoom: 1;
+        clear: both;
+        display: block;
+    }
+    .main-footer-he{
+        float: left;
+    }
+    .main-footer-he a{
+        display: inline-block;
+        width: 60px;
+        height: 24px;
+        margin: 0 10px 0 0;
+        background: url(../images/authorisation.png) no-repeat left top;
+    }
+    .main-footer-he a:nth-child(1){
+        width: 70px;
+        background-position: -70px 0;
+    }
+    .main-footer-he a:nth-child(2){
+        width: 70px;
+        background-position: 0 0;
+    }
+    .main-footer-he a:nth-child(3){
+        background-position: -140px 0;
+    }
+    .main-footer-he a:nth-child(4){
+        background-position: -200px 0;
+    }
+    .main-footer-he a:nth-child(5){
+        width: 74px;
+        background-position: -260px 0;
+    }
+    .main-footer-he a:hover{
+        background-position-y:-24px;
+    }
+    .main-footer-share{
+        float: right;
+    }
+    .main-footer-share a,.main-footer-share span{
+        color: #818f99;
+    }
+    .footer-qq:hover,.footer-weibo:hover{
+        color: #68b4f2;
+    }
+    /*首页的vr看房*/
+/*swiper大图滚动的分页器自定义*/
+.swiper-container{
+    width: 100vw;
+    height: 450px;
+}
+.swiper-slide{
+    text-align: center !important;
+}
+.swiper-pagination-bullet{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #ccd2d6;
+    border: 1px solid #ccd2d6;
+    opacity: 1;
+    border-radius: 50%;    
+    transition: all 1s ease-in-out;
+}
+.swiper-pagination-bullet-active{
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #68b4f2;
+    border-radius: 50%;
+}
+/*vr设备合作商列表*/
+.vr-partner{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 110px;
+}
+.vr-partner p{
+    font-size: 30px;
+    line-height: 1.65;
+}
+.vr-partner p strong{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.vr-partner span{
+    line-height: 1.65;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.vr-partner .vr-partner-msg{
+    width: 1200px;
+    padding: 50px 0;
+    box-sizing: border-box;    
+}
+.vr-partner .vr-partner-msg a{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    padding: 15px 0;
+    border: 1px solid #d7e0e7;
+    margin: 0 -1px -1px 0;
+    box-sizing: border-box;
+}
+.vr-partner .vr-partner-msg a img{
+    display: block;
+    margin: 0 auto;
+    height: 68px;
+    max-width: 100%;
+}
+.vr-partner .vr-partner-msg a:hover{
+    position: relative;
+    border-color: #5ccead;
+    z-index: 10;
+}
+/*导航的自适应*/
+@media screen and (max-width:768px){
+    #menu-mark{
+        display: block;position: absolute;right: 0;top: 0;
+    }
+    .main-nav{
+        display: none;
+    }
+    .main-header{
+        width: 100%;position: relative;
+    }
+    .main-logo{
+        width: 100%;position: relative;
+        text-align: center;
+    }
+    .main-logo a{
+        float: none;display: inline-block;text-align: center;
+    }
+    .main-foot-top,.main-footer-bottom{
+        display: none;
+    }
+    .main-footer::after{
+        line-height: 50px;
+        bottom: 0;
+        content: "Copyright © 51wofang.com";
+        border: 0;
+        text-align: center;
+        color: #818f99;
+        font-size: 14px;
+    }
+}

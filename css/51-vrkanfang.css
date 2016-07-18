@@ -1,0 +1,310 @@
+.vr-video{
+    position: relative;
+    height: 600px;
+}
+.vr-video-bg{
+    background: url(../images/video.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.vr-video-src{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+.vr-video-search{
+    width: 698px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 100;
+    border-radius: 3px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#80000000', endColorstr='#80000000');
+    background: rgba(0,0,0,0.5);
+}
+.vr-form-wrap{
+    float: left;
+    width: 450px;
+}
+.vr-form-wrap input{
+    width: 100%;
+    height: 45px;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    background: #fff;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px 0 0 2px;
+}
+.vr-video-search button{
+    border-radius: 0 2px 2px 0;
+    border: none;
+    height: 45px;
+    width: 100px;
+    float: left;
+    background: #5ccead;
+    color: #fff;
+}
+.vr-video-search a{
+    display: inline-block;
+    font-size: 16px;
+    padding: .6em 1.4em;
+    line-height: 1;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    border-radius: .16em;
+    border: none;
+    height: 45px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 45px;
+    float: left;
+    background: #5ccead;
+    color: #fff;
+    margin-left: 15px;
+}
+.vr-watch-list{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.vr-watch-list-title{
+    padding: 80px 0 60px 0;
+    line-height: 1.65;
+    color: #2d404d;
+    position: relative;
+}
+.vr-watch-list-title>h2{
+    font-size: 30px;
+}
+.vr-watch-list-title>span{
+    font-size: 20px;
+}
+.vr-watch-lists{
+    width: 1230px;
+    margin-left:-30px;
+}
+.vr-list-info{
+    position: relative;
+    float: left;
+    width: 380px;
+    height: 370px;
+    margin: 0 0 30px 30px;
+    border: 1px solid #d7e0e7;
+    background: #fff;
+    box-sizing: border-box;
+}
+.vr-list-photo{
+    position: relative;
+    width: 100%;
+    height: 236px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.vr-list-photo img{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;   
+}
+.vr-list-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    padding: 25px 20px 0 15px;
+    font-size: 16px;
+    background: url(../images/list_title_bg.png) no-repeat;
+    box-sizing: border-box;
+    line-height: 1.65;
+    font-weight: normal;
+    word-break: break-all
+}
+.vr-list-title a{
+    display: block;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.vr-link{
+    width: 100%;
+    text-align: left;
+    text-indent: 1em;
+    padding: 25px 0;
+}
+.vr-link a{
+    position: relative;
+}
+.vr-link a i{
+    font-size: 34px;
+    line-height: 1;
+}
+.vr-link a::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1em 2em;
+    background: #fff;
+    color: transparent;
+    content: attr(data-title);
+    white-space: nowrap;
+    line-height: 1;
+    opacity: 0;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    box-shadow: 0 1px 5px #ccd2d6;
+}
+.vr-link a:hover i{
+    color: green;
+}
+.vr-link a:hover::before{
+    color: #2d404d;
+    opacity: 1;
+    -webkit-transform: scale(1) translate(-50%, -120%);
+    transform: scale(1) translate(-50%, -165%)
+}
+.vr-line{
+    border-bottom: 1px dashed #d7e0e7;
+    margin: 0 20px 15px 20px;
+}
+.vr-message{
+    text-align: left; 
+    color: #818f99;  
+}
+.vr-message span{
+    display: inline-block;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.vr-message a{
+    color: #818f99; 
+}
+.vr-message em{
+    font-style: normal;
+}
+.vr-message span:nth-child(1){
+    width: 44%;
+}
+.vr-message span:nth-child(2){
+    width: 28%;
+    text-align: center;
+}
+.vr-message span:nth-child(3){
+    width: 24%;
+    text-align: right;
+    border-left: 1px solid #818f99;
+}
+.vr-list-info:hover{
+    border-color: #95c5ec;
+    box-shadow: 0 0 15px #ccd2d6;
+}
+.vr-list-photo img:hover{
+    transform: scale(1.3);
+    -webkit-transform:scale(1.3);
+}
+/*查看更多*/
+.vr-cheak-more{
+    width: 1200px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+}
+.vr-cheak-more a{
+    width: 200px;
+    font-size: 18px;
+    color: #677c8b;
+    display: inline-block;
+    letter-spacing: 1px;
+    border: 1px solid #d7e0e7;
+    border-radius: .16em;
+    padding: .6em 1.4em;
+    line-height: 1;
+    vertical-align: middle;
+}
+.vr-cheak-more a:hover{
+    outline: none;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.15);
+}
+/*vr看房行业介绍*/
+.vr-watch-introduce{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+.vr-watch-introduce p{
+    font-size: 30px;
+    line-height: 1.65;
+    color: #2d404d;
+}
+.vr-watch-introduce span{
+    display: block;
+    padding: 10px 0 15px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #2d404d;
+}
+/*vr介绍大图缩放*/
+.vr-watch-zoom{
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.vr-watch-zoom-bg{
+    width: 100%;
+    background: url(../images/vr-kan-bg.jpg)no-repeat;
+    height: 430px;
+    transform-origin: 50% 50%;
+    animation: vr-zoom 30s linear infinite;
+    position: absolute;
+    z-index: -1;
+}
+@keyframes vr-zoom{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.24);}
+    100%{transform: scale(1);}
+}
+.vr-watch-zoom-text{
+    text-align: center;
+    line-height: 1.65;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+/*.vr-watch-zoom:after{
+    content: "";
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}*/
+.vr-watch-zoom-text p{
+    font-size: 30px;
+    color: #2d404d;
+}
+.vr-watch-zoom-text p strong{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.vr-watch-zoom-text span{
+    padding-top: 10px;
+    font-size: 22px;
+}

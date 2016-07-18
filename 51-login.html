@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录-无忧我房</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/51-public.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="container" id="my-page">
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="/about/">无忧我房</a>
+                    <ul>
+                        <li><a href="#">VR看房</a></li>
+                        <li><a href="#">看房列表</a></li>
+                        <li><a href="#">地图找房</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact/">无忧VR</a>
+                </li>
+                <li>
+                    <a href="/contact/">无忧AI</a>
+                </li>
+                <li>
+                    <a href="/contact/">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">登陆</a>
+                </li>
+                <li>
+                    <a href="51-regist.html">注册</a>
+                </li>
+            </ul>
+    </nav>
+        <div class="nav-wrap">
+            <header class="main-header">
+                <div class="main-logo">
+                    <a href="http://www.51wofang.com" title="51无忧我房"></a>
+                </div>
+                <ul class="main-nav">
+                    <li>
+                        <a href="" title="首页">首页</a>
+                    </li>
+                    <li class="li-dropdown">
+                        <a href="javascript:void(0)" title="无忧看房">无忧看房</a>
+                        <ul class="head-dropdown">
+                            <li>
+                                <a href="#">VR看房</a>
+                            </li>
+                            <li>
+                                <a href="#">看房列表</a>
+                            </li>
+                            <li>
+                                <a href="#">地图找房</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" title="无忧VR">无忧VR</a>
+                    </li>
+                    <li>
+                        <a href="" title="无忧AI">无忧AI</a>
+                    </li>
+                    <li>
+                        <a href="" title="关于我们">关于我们</a>
+                    </li>
+                    <li class="regist">
+                        <a href="51-regist.html">注册</a>
+                    </li>
+                    <li class="login">
+                        <a href="#" >登陆</a>
+                    </li>
+                </ul>
+                <a href="#my-menu" id="menu-mark" class="hamburger hamburger--vortex">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </header>
+        </div>
+        <div class="login-content">
+            <div class="login-table">
+                <h2><span>
+                    <em>登陆</em>
+                </span></h2>
+                <form class="login-form">
+                    <div class="form-group login-form-w">
+                        <input type="text" placeholder="手机号" name="phone" id="login-phone">
+                        <div class="login-error-block">手机格式错误</div>
+                    </div>
+                    <div class="form-group login-form-w">
+                        <input type="password" placeholder="密码" name="password" id="password">
+                        <div class="login-error-block login-error-block2">手机格式错误</div>
+                        <i class="fa fa-eye fa-lg show-password"></i>
+                    </div>
+                    <div class="form-group login-form-w">
+                        <input type="text" placeholder="验证码" name="check-code" id="check-code">
+                        <div class="login-error-block login-error-block3">手机格式错误</div>
+                        <div class="login-check-img">
+                            <img src="images/captcha.png" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" class="login-rember">记住登陆状态
+                    </div>
+                    <div class="form-gropu login-sub">
+                        <input type="submit" value="登陆">
+                    </div>        
+                    <p><a href="#">忘记密码</a><a href="51-regist.html" style="float:right">注册无忧我房</a></p>
+                    <p class="login-form-p">
+                    <i class="fa fa-shield"></i>
+                    数据传输采用SSL加密技术，保障您的信息安全
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.mmenu.min.js"></script>
+    <script src="javascript/51-public.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#my-menu").mmenu({
+            "navbar":{
+                "title":"我要我房"
+            },
+      });
+   });
+    </script>
+</html>

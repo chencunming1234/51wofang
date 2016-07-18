@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页-无忧我房</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/51-public.css">
+    <link rel="stylesheet" href="css/51-vrkanfang.css">
+</head>
+<body>
+    <div class="container" id="my-page">
+    <!-- 侧滑菜单 -->
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="/about/">无忧我房</a>
+                    <ul>
+                        <li>
+                            <a href="#">VR看房</a>
+                        </li>
+                        <li>
+                            <a href="#">看房列表</a>
+                        </li>
+                        <li>
+                            <a href="#">地图找房</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact/">无忧VR</a>
+                </li>
+                <li>
+                    <a href="/contact/">无忧AI</a>
+                </li>
+                <li>
+                    <a href="/contact/">关于我们</a>
+                </li>
+                <li>
+                    <a href="/contact/">登陆</a>
+                </li>
+                <li>
+                    <a href="/contact/">注册</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 导航条 -->
+        <div class="nav-wrap">
+            <header class="main-header">
+                <div class="main-logo" style="position:relative;">
+                    <a href="http://www.51wofang.com" title="51无忧我房"></a>
+                </div>
+                <ul class="main-nav">
+                    <li>
+                        <a href="" title="首页">首页</a>
+                    </li>
+                    <li class="li-dropdown">
+                        <a href="javascript:void(0)" title="无忧看房">无忧看房</a>
+                        <ul class="head-dropdown">
+                            <li>
+                                <a href="#">VR看房</a>
+                            </li>
+                            <li>
+                                <a href="#">看房列表</a>
+                            </li>
+                            <li>
+                                <a href="#">地图找房</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" title="无忧VR">无忧VR</a>
+                    </li>
+                    <li>
+                        <a href="" title="无忧AI">无忧AI</a>
+                    </li>
+                    <li>
+                        <a href="" title="关于我们">关于我们</a>
+                    </li>
+                    <li class="regist">
+                        <a href="#">注册</a>
+                    </li>
+                    <li class="login">
+                        <a href="#" >登陆</a>
+                    </li>
+                </ul>
+                <a href="#my-menu" id="menu-mark" class="hamburger hamburger--vortex">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </header>
+        </div>
+        <!-- 开始内容 -->
+        <div class="index-content">
+            <div class="vr-video">
+                <div class="vr-video-bg"></div>
+                <div class="vr-video-src">
+                    <video width="100%" height="600" loop autoplay poster="images/video.jpg" oncontextmenu="return false;">
+                        <source type="video/mp4" src="images/vr_bg.mp4">
+                        <source type="video/webm" src="images/vr_bg.webm">
+                        "你的浏览器不支持htm5的video标签，请用chrome浏览器观看"
+                </video>
+                </div>
+                <div class="vr-video-search">
+                    <form>
+                        <div class="vr-form-wrap">
+                            <input type="search" class="vr-input-search" placeholder="请输入楼盘信息" name="keywords" autocomplete="off">
+                        </div>
+                        <button type="submit">搜索</button>
+                        <a href="#" class="vr-form-link">地图找房</a>
+                    </form>
+                </div>
+            </div>
+            <div class="vr-watch-list">
+                <div class="vr-watch-list-title">
+                    <h2>
+                        身临其境的看房体验<br>
+                        <span>MORE THAN REAL</span>
+                    </h2>
+                    <div class="vr-watch-lists clearfix">
+                        <div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div>
+                        <div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div><div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div><div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div>
+                        <div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div>
+                        <div class="vr-list-info">
+                            <div class="vr-list-photo">
+                                <a href="#"><img src="images/index-fang1.jpg" alt=""></a>
+                                <h4 class="vr-list-title"><a href="#">上海金地天地云墅 12平米 联排别墅</a></h4>
+                            </div>
+                        <div class="vr-link">
+                            <a href="#" data-title="虚拟样板间"><i class="vr-icon1 iconfont">&#xe609;</i></a>
+                        </div>
+                        <div class="vr-line"></div>
+                        <div class="vr-message">
+                            <span>
+                                <i class="icon iconfont">&#xe602;</i>
+                                <em>上海&nbsp;宝山区</em>
+                            </span>
+                            <span>
+                                <i class="icon iconfont">&#xe600;</i>
+                                <em>1773</em>
+                            </span>
+                            <span>
+                                <a href="#"><i class="icon iconfont">&#xe607;</i></a>
+                                <em>2</em>
+                            </span>
+                            
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="vr-cheak-more">
+                <a href="#">查看更多</a>
+            </div>
+            <div class="vr-img-lunbo">
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/bxslider-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/bxslider-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/bxslider-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/bxslider-4.jpg" alt=""></div>
+                </div>
+
+                <div class="swiper-pagination"></div> 
+                <div class="swiper-button-prev swiper-button-opacity"></div>
+                <div class="swiper-button-next swiper-button-opacity"></div>
+            </div>
+            </div>
+            <div class="vr-watch-introduce">
+                    <i class="icon iconfont" style="font-size:40px;color:#ccd2d6;line-height:1;">&#xe603;</i>
+                    <p>这是房地产的下一个入口</p>
+                    <span>THE NEXT GATEWAY OF TEAL ESTATE IS HERE</span>
+                    <p>未来已来，且已成趋势</p>
+                    <span>FUTURE IS NOW</span><br>
+                    <i class="icon iconfont" style="font-size:60px;color:#ccd2d6;line-height:1;">&#xe60a;</i>
+            </div>
+            <div class="vr-watch-zoom">
+                <div class="vr-watch-zoom-bg"></div>
+                <div class="vr-watch-zoom-text">
+                        <p>无忧我房提供高品质的<strong>现房三维可视化</strong>和<strong>期房虚拟现实技术</strong></p>
+                        <span>WEB PROVIDE THE BEST SOLUTION OF 3D CAPTURING AND VR CONTENT DEVELOPMENT</span>
+                </div>
+            </div>
+            <div class="vr-partner">
+                <p>无忧我房正在和全球<strong>1,680,000</strong>个硬件制造商、</p>
+                <p>品牌服务商、内容提供商、爱好者一同开创虚拟现实新纪元</p>
+                <span>BE PART OF CREATING THE NEW AGE</span>
+                <div class="vr-partner-msg clearfix">
+                    <a href="#"><img src="images/vr-partner1.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner2.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner3.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner4.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner5.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner6.png" alt=""></a>
+                    <a href="#"><img src="images/vr-partner7.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner8.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner9.jpg" alt=""></a>
+                    <a href="#"><img src="images/vr-partner10.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="main-foot-top">
+                            <ul class="main-footer-ul">
+                <li>
+                    <dl>
+                        <dt><a href="#">关于我们</a></dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">团队介绍</a></dd>
+                        <dd><a href="">合作伙伴</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">产品服务</a></dt>
+                        <dd><a href="">产品介绍</a></dd>
+                        <dd><a href="">隐私声明</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">帮助中心</a></dt>
+                        <dd><a href="">通知公告</a></dd>
+                        <dd><a href="">意见反馈</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">联系我们</a></dt>
+                        <dd>无忧热线：400-816-5151[8:00-20:00]</dd>
+                        <dd>客服邮箱：51service@51fang.com</dd>
+                        <dd>商务合作：51bd@51fang.com</dd>
+                        <dd>公司地址：北京市东城区香河园路当代MOMA艺术区B楼</dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="main-footer-img-code">
+                <span>
+                    <img src="images/qr-code-weixin.jpg" alt="">
+                    无忧我房官方微信
+                </span>
+                <span style="margin-left:40px;">
+                    <img src="images/qr-code-weibo.png" alt="">
+                    无忧我房官方微博
+                </span>
+            </div>
+            </div>
+            <div class="main-footer-bottom">
+                <div class="main-footer-he">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="main-footer-share">
+                <a href="#">京ICP备15017470号-2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="footer-qq"><i class="fa fa-qq"></i></a>&nbsp;&nbsp;
+                <a href="#" class="footer-weibo"><i class="fa fa-weibo"></i></a>&nbsp;&nbsp;
+                <span>Copyright©2016</span>&nbsp;&nbsp;
+                <a href="http://www.51wofang.com"></a>&nbsp;&nbsp;
+                <a href="#">第一摩码网络科技（北京）有限公司</a>
+            </div>
+            </div>            
+        </footer>
+    </div>
+</body>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.mmenu.min.js"></script>
+    <script src="javascript/swiper.jquery.min.js"></script>
+    <script src="javascript/51-public.js"></script>
+    <script src="javascript/51-vrkanfang.js"></script>
+</html>
