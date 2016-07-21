@@ -1,0 +1,424 @@
+.wuyou-vr{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+
+    clear: both;
+    padding: 60px 0 80px 0;
+}
+.wuyou-vr:nth-child(odd) {
+    background-color: #f5f8fb;
+}
+.wuyou-vr:nth-child(1){
+    background: #000;
+    background: url(../images/s_1_bg.jpg) no-repeat center top;
+    height: 500px;
+    min-width: 1200px;
+    padding: 0;
+}
+.wuyou-vr-h1{
+    position: absolute;
+    top: 65px;
+    left: 0;right: 0;
+    height: 96px;
+    background: url(../images/s_1_t_1.png) no-repeat center top;
+}
+.wuyou-vr-h2{
+    position: absolute;
+    top: 215px;
+    left: 0;right: 0;
+    height: 80px;
+    background: url(../images/s_1_t_2.png) no-repeat center top;
+}
+.wuyou-vr-h3{
+    position: absolute;
+    top: 295px;
+    left: 0;right: 0;
+    height: 40px;
+    background: url(../images/s_1_t_3.png) no-repeat center top;
+}
+/*房地产全周期场景*/
+.wuyou-vr .wuyou-vr-title{
+    text-align: center;
+    padding: 0 0 30px;
+    line-height: 1.65;
+
+}
+.wuyou-vr .wuyou-vr-title h2{
+    color: #2d404d;
+    font-size: 30px;
+}
+.wuyou-vr .wuyou-vr-title p{
+    font-size: 18px;
+}
+.wuyou-vr-content{
+    width: 1200px;
+    display: table;
+    margin: 0 auto;
+}
+.wuyou-vr-quanjing{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.wuyou-vr-quanjing span{
+    display: inline-block;
+    font-size: 0;
+    width: 204px;
+    height: 303px;
+    margin: 0 5px;
+}
+.wuyou-vr-quanjing img{
+    width: 100%;display: block;
+}
+/*轮番图*/
+.wuyou-vr-slide{
+    max-width: 1050px;
+    position: relative;
+    margin: 0 auto;}
+.wuyou-slide-warp{
+    transform: translate3d(-1100px,0,0);
+}
+.wuyou-slide-view{
+    width: 100%;
+    overflow: hidden;
+}
+.wuyou-slide-items{
+    width: 500px;
+    margin-right: 50px;
+    float: left;
+}
+.wuyou-slide-items > a{
+    display: block;
+}
+.wuyou-slide-items > a img{
+    width: 100%;
+    height: 280px;
+    display: block;
+}
+.wuyou-slide-items-info{
+    text-align: right;
+    padding: 10px 0;
+    border-bottom: 1px dashed #d7e0e7;
+}
+.wuyou-slide-items-info img{
+    width: 140px;
+    float: left;
+}
+.wuyou-slide-items-info p{
+    float: right;    
+    color: #677c8b;
+    font-size: 14px;
+    line-height: 46px;
+    padding-right: 5px
+}
+.wuyou-dist .wuyou-prev,.wuyou-dist .wuyou-next{
+    position: absolute;
+    top: 110px;
+    width: 40px;
+    height: 60px;
+    background: url(../images/focus.png) no-repeat;
+}
+.wuyou-vr-control{
+    width: 100%;
+    top: 330px;
+    display: none;
+    position: absolute;
+}
+.wuyou-vr-control-button{
+    text-align: center;
+}
+.wuyou-vr-control-button span{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #ccd2d6;
+    border: 1px solid #ccd2d6;
+    opacity: 1;
+    border-radius: 50%;    
+    transition: all 1s ease-in-out;
+}
+.wuyou-vr-control-button span.active{
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #68b4f2;
+    border-radius: 50%;
+}
+.wuyou-dist{
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+.wuyou-dist .wuyou-prev{
+    left: -65px;
+}
+.wuyou-dist .wuyou-prev:hover{
+    background-position-y:-60px;
+}
+.wuyou-dist .wuyou-next{
+    background-position-x:-50px; 
+    right: -65px;
+}
+.wuyou-dist .wuyou-next:hover{
+    background-position-y:-60px;
+}
+/*点击加入*/
+.wuyou-join-us{
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+}
+.wuyou-join-us a{
+    font-size: 18px;
+    color: #68b4f2;
+}
+.wuyou-join-us a i{
+    font-size: 60px;
+    color: #ccc;
+}
+.wuyou-join-us a:hover i{
+    color: #68b4f2;
+}
+/*无忧我房虚拟样板间全面升级*/
+.wuyou-vr-tiyan ul{
+    padding-bottom: 100px;
+}
+.wuyou-vr-tiyan li{
+    float: left;
+    display: inline-block;
+    width: 16.666667%;
+    font-size: 16px;
+    color: #2d404d;
+    text-align: center;
+    line-height: 3;
+}
+.wuyou-vr-tiyan li:before{
+    content: "";
+    background:url(../images/vr_show_icon.png) no-repeat;
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+.wuyou-vr-tiyan li:nth-child(1):before{
+    background-position: left top;
+}
+.wuyou-vr-tiyan li:nth-child(2):before{
+    background-position: -72px top;
+}
+.wuyou-vr-tiyan li:nth-child(3):before{
+    background-position: -144px top;
+}
+.wuyou-vr-tiyan li:nth-child(4):before{
+    background-position: 0px -72px;
+}
+.wuyou-vr-tiyan li:nth-child(5):before{
+    background-position: -72px -72px;
+}
+.wuyou-vr-tiyan li:nth-child(6):before{
+    background-position: -144px -72px;
+}
+.wuyou-vr-tiyan1{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wuyou-vr-tiyan-items{
+    float: left;
+    min-height: 151px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2px;
+}
+.wuyou-vr-tiyan-info{
+    width: 65%;
+    float: left;
+    padding: 5px 20px 0;
+}
+.wuyou-vr-tiyan-info h4{
+    padding-top: 5px;
+    font-size: 20px;
+    color: #2d404d;
+}
+.wuyou-vr-tiyan-info p{
+    padding: 10px 0 0;
+    font-size: 16px;
+    color: #b0b9bf;
+}
+.wuyou-vr-tiyan-items span{
+    float: right;
+    display: inline-block;
+    width: 151px;
+    height: 151px;
+    background: url(../images/vr-icon-bg.png);
+}
+/*一次内容开发*/
+.wuyou-vr-ones{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.wuyou-vr-ones span{
+    width: 300px;
+    height: 256px;
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 0;
+}
+.wuyou-vr-ones span img{
+    display: block;
+    width: 100%;
+}
+/*几张大的图片*/
+.wuyou-vr-employ{
+    display: block;
+    margin: 40px auto 0;
+}
+.wuyou-vr-bigmap{
+    display: block;
+    margin: 40px auto 0;
+}
+/*第一个表格*/
+.wuyou-vr-table1{
+    text-align: center;
+    line-height: 1;
+}
+.wuyou-vr-table1 th{
+    width: 400px;
+    font-weight: bold;
+    background: #ebf0f4;
+    text-align: center;
+    padding: 15px;
+    color: #677c8b;
+    font-size: 16px;
+}
+.wuyou-vr-table1 tr{
+    padding: 0;
+    border-bottom: 1px solid #ebf0f4;
+    background-color: #fff;
+}
+.wuyou-vr-table1 td{
+    padding: 15px;
+    text-align: center;
+    color: #677c8b;
+    font-size: 16px;
+}
+/*第二个表格*/
+.wuyou-vr-table2{
+    text-align: center;
+    line-height: 1;
+}
+.wuyou-vr-table2 caption{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.wuyou-vr-table2 th{
+    width: 300px;
+    font-weight: bold;
+    background: #ebf0f4;
+    text-align: center;
+    padding: 15px;
+    color: #677c8b;
+    font-size: 16px;
+}
+.wuyou-vr-table2 tr{
+    padding: 0;
+    border-bottom: 1px solid #ebf0f4;
+    background-color: #fff;
+}
+.wuyou-vr-table2 td{
+    padding: 15px;
+    text-align: center;
+    color: #677c8b;
+    font-size: 16px;
+}
+/*影响力*/
+.wuyou-vr-influence{
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.wuyou-vr-influence span{
+    display: inline-block;
+    width: 251px;
+    height: 214px;
+    margin: 0 9px;
+}
+.wuyou-vr-influence span img{
+    width: 100%;
+}
+/*合作开发*/
+.wuyou-vr-line{
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    background: #ccd2d6;
+    position: relative;
+}
+.wuyou-vr-line span{
+    max-width: 150px;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: -15px;
+    padding: 0 5px;
+    background: #f5f8fb;
+
+}
+/*动画*/
+.delay-2 {
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.delay-4 {
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.delay-6 {
+    -moz-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+.delay-8 {
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.delay-10 {
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.animated{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.zoomIn{
+    animation-name: zoomIn;
+    -webkit-animation-name: zoomIn;
+}
+@keyframes zoomIn{
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+

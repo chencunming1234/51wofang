@@ -14,7 +14,6 @@
     height: 450px;
     float: left;
 }
-
 .index-info{
     width: 100%;
     padding: 60px 0 40px 0;
@@ -193,8 +192,12 @@
     cursor: pointer;
 }
 .vr-list-photo img{
+    width: 100%;
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;   
+}
+.vr-list-photo a{
+    display: block;
 }
 .vr-list-title{
     position: absolute;
@@ -263,12 +266,18 @@
 }
 .vr-message{
     text-align: left; 
-    color: #818f99;  
+    color: #818f99;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
 }
 .vr-message span{
     display: inline-block;
     padding: 0 20px;
     box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .vr-message a{
     color: #818f99; 
