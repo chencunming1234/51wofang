@@ -3,6 +3,9 @@
     overflow: hidden;
     position: relative;
 }
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    position: absolute;right: 20px;
+}
 .index-img-foreach{
     width: 100%;
 }
@@ -437,4 +440,98 @@
 }
 .index-partner-right li:hover a{
     color: #68b4f2;
+}
+@media screen and ( max-width: 767px) {
+    .swiper-container{
+        width: 100%;
+        height: 167px;
+    }
+    .swiper-slide img{
+        width: 100vw;
+        height: 167px;
+    }
+    .index-info-wrap{
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .index-info-wrap li{
+        float: none;
+        display: inline-block;
+        width: auto;
+        min-height: 70px;
+    }
+    .index-info-wrap li::before{
+        left: 10px;
+        margin: 0;
+        width: 70px;
+        height: 50px;
+        background-size: 350px 50px;
+    }
+    .index-info-wrap li:nth-child(1)::before{
+    background-position-x:0;
+    }
+    .index-info-wrap li:nth-child(2)::before{
+        background-position-x:-70px;
+    }
+    .index-info-wrap li:nth-child(3)::before{
+        background-position-x:-140px;
+    }
+    .index-info-wrap li:nth-child(4)::before{
+        background-position-x:-210px;
+    }
+    .index-info-wrap h4{
+        padding: 0 0 0 90px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .index-info-wrap p{
+        padding: 0 0 0 90px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .index-hot-wrap{
+        width: 100%;
+    }
+    .index-hot-info{
+        width: 100%;
+        margin: 0;
+    }
+    .index-hot-info a{
+        margin: 0;
+        float: none;
+        width: 100%;
+        
+    }
+    .index-vr-content{
+        width: 100%;
+        margin: 0;
+               
+    }
+    .vr-list-info{
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .vr-list-photo img{
+        width: 100%;
+        height: 236px;
+    }
+    .index-view-bg{
+        height: 170px;
+        animation:none;
+    }.index-view-bg h2{
+        width: 99%;
+        font-size: 16px;
+    }
+    .index-checkmore{
+        width: 100%;
+    }
+    .index-view-bg h2 strong{
+        font-size: 16px;
+    }
+    .index-partner{
+        display: none;
+    }
 }

@@ -438,10 +438,45 @@
                     </div>
                 </div>
             </div>
-            <div class="wuyou-vr">
+            <div class="wuyou-vr" id="ready-now">
                 <div class="wuyou-vr-title">
                     <h2>预约体验</h2>
                     <p>其他城市 coming soon</p>
+                    <form action="#">
+                        <label for="the-city">您所在的城市
+                            <select name="thecity" id="the-city">
+                                <option value="请选择">请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                                <option value="福建">福建</option>
+                                <option value="江苏">江苏</option>
+                                <option value="河北">河北</option>
+                                <option value="河南">河南</option>
+                                <option value="江浙">浙江</option>
+                                <option value="山东">山东</option>
+                            </select>
+                        </label>
+                        <label for="the-id">您的身份
+                            <select name="theid" id="the-id">
+                                <option value="请选择">请选择</option>
+                                <option value="开发商">开发商</option>
+                                <option value="媒体">媒体</option>
+                                <option value="合作伙伴">合作伙伴</option>
+                                <option value="无忧用户">无忧用户</option>
+                                <option value="兴趣爱好者">兴趣爱好者</option>
+                            </select>
+                        </label>
+                        <label for="inc-name">公司名称
+                            <input type="text" id="inc-name" name="incname">
+                        </label>
+                        <label for="real-name">您的真实姓名
+                            <input type="text" id="real-name" name="realname">
+                        </label>
+                        <label for="real-tel">您的手机号
+                            <input type="text" id="real-name" name="realname">
+                        </label>
+                        <input type="submit" id="real-sub" value="预约体验">
+                    </form>
                 </div>
             </div>
         </div>

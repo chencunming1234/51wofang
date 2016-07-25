@@ -368,6 +368,46 @@
     background: #f5f8fb;
 
 }
+/*立即预约*/
+#ready-now form{
+    width: 400px;display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#ready-now form label{
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+}
+#ready-now form select{
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #d7e0e7;
+    border-radius: 0!important;
+    background: white;
+}
+#ready-now form select option{
+    width: 120%;
+}
+#ready-now form input{
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #d7e0e7
+}
+#real-sub{
+    background: #68b4f2;
+    color: white;
+    font-size: 18px;
+    height: 48px!important;
+    cursor: pointer;
+    border-radius: 5px;
+}
 /*动画*/
 .delay-2 {
     -moz-animation-delay: 0.3s;
@@ -419,6 +459,111 @@
         transform: scale3d(1, 1, 1);
     }
 }
-
+@media all and (max-width: 767px){
+    .wuyou-vr:nth-child(1){
+        height: 250px;
+        min-width: 0;
+        background-size: 1000px auto;
+    }
+    .wuyou-vr-h1{
+        top: 30px;
+        background-size: 50%;
+        height: 70px;
+        margin: 0 auto;
+    }
+    .wuyou-vr-h2{
+        top: 100px;
+        background-size: 85%;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .wuyou-vr-h3{
+        top: 150px;
+        background-size: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .wuyou-vr-content{
+        width: 100%;
+    }
+    
+    .wuyou-vr-tiyan li{
+        width: 33.333%;
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+    .wuyou-vr-tiyan1{
+        position: relative;
+        width: 100%;
+    }
+    .wuyou-vr-tiyan-info{
+        float: right !important;
+        text-align: left !important;
+        padding: 0 10px 0 0;
+        box-sizing: border-box;
+        width: 85%;
+    }
+    .wuyou-vr-tiyan-info h4{
+        font-size: 16px;
+    }
+    .wuyou-vr-tiyan-info p{
+        font-size: 12px;
+    }
+    .wuyou-vr-tiyan-items{
+        min-height: 0;
+        width: 100%;
+        position: relative;
+    }
+    .wuyou-vr-tiyan-items:nth-child(1) span{
+        background-position: left -90px !important;
+        background-size: 304px 150px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .wuyou-vr-tiyan-items:nth-child(2) span{
+        background-position: -30px -90px !important;
+        background-size: 304px 150px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .wuyou-vr-tiyan-items:nth-child(3) span{
+        background-position: -60px -90px !important;
+        background-size: 304px 150px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .wuyou-vr-tiyan-items:nth-child(4) span{
+        background-position: -90px -90px !important;
+        background-size: 304px 150px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .wuyou-vr-ones span{
+        display: block;
+        margin: 0 auto;
+    }
+    .wuyou-vr-influence{
+        white-space: nowrap;
+    }
+    .vr-partner{
+        width: 100%;
+    }
+    #ready-now form{
+        width: 100%;
+        padding: 10px;
+    }
+}
 
 

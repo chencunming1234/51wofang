@@ -133,3 +133,11 @@
     color: #818f99;
     box-sizing: border-box;
 }
+@media screen and (max-width: 767px){
+    .login-content{
+        width: 100%;
+    }
+    .login-content .login-table{
+        width: 100%;
+    }
+}

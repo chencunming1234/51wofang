@@ -134,3 +134,11 @@
     color: #818f99;
     box-sizing: border-box;
 }
+@media screen and (max-width: 767px){
+    .regist-content{
+        width: 100%;
+    }
+    .regist-content .regist-table{
+        width: 100%;
+    }
+}

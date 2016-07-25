@@ -7,12 +7,18 @@ $(document).ready(function(){
         if(speed<=-4400){
             speed-=550;
             $(".wuyou-slide-warp").css({"transition-duration":".5s","transform":"translate3d("+speed+"px,0,0)"})
-            setTimeout(function () {
+            // setTimeout(function () {
+            //     if(speed<=-4950){
+            //     speed=-1100;
+            //     $(".wuyou-slide-warp").css({"transition-duration":"0s","transform":"translate3d("+speed+"px,0,0)"})
+            //     }
+            // }, 500)
+            $(".wuyou-slide-warp").on("webkitTransitionEnd transitionEnd",function(){
                 if(speed<=-4950){
-                speed=-1100;
-                $(".wuyou-slide-warp").css({"transition-duration":"0s","transform":"translate3d("+speed+"px,0,0)"})
+                    speed=-1100;
+                    $(".wuyou-slide-warp").css({"transition-duration":"0s","transform":"translate3d("+speed+"px,0,0)"})
                 }
-            }, 500)
+            })
         }
         else {
             speed-=1100;
@@ -24,12 +30,18 @@ $(document).ready(function(){
         if(speed>=-1100){
             speed+=550;
             $(".wuyou-slide-warp").css({"transition-duration":".5s","transform":"translate3d("+speed+"px,0,0)"})
-            setTimeout(function () {
+            // setTimeout(function () {
+            //     if(speed>=-550){
+            //     speed=-4400;
+            //     $(".wuyou-slide-warp").css({"transition-duration":"0s","transform":"translate3d("+speed+"px,0,0)"})
+            //     }
+            // }, 500)
+             $(".wuyou-slide-warp").on("webkitTransitionEnd transitionEnd",function(){
                 if(speed>=-550){
                 speed=-4400;
                 $(".wuyou-slide-warp").css({"transition-duration":"0s","transform":"translate3d("+speed+"px,0,0)"})
                 }
-            }, 500)
+             })
         }
         else {
             speed+=1100;
