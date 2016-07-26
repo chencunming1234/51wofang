@@ -1,7 +1,7 @@
 var canvas=document.getElementsByTagName("canvas")[0],ctx=canvas.getContext("2d"),
     mousePosition={
-    x:0,
-    y:0
+    x:300,
+    y:300
 },dots=[];
 window.onload=function(){ 
     //随机位置
@@ -10,15 +10,20 @@ window.onload=function(){
         var ev=e||window.event;
         mousePosition.x=ev.pageX;
         mousePosition.y=ev.pageY-65;
-
-    }   
+    }
     setInterval(function(){
         ctx.clearRect(0,0,canvas.width,canvas.height)
-        for(var i=0;i<1000;i++){
-        dots[i].move();             
+        var len=dots.length;
+        for(var i=0;i<len;i++){
+            dots[i].move();
+            for(var j=i+1;j<len;j++){
+                if(getDistance(dots[i],dots[j])<180&&getDistance(dots[i],mousePosition)<180&&getDistance(dots[j],mousePosition)<180){
+                    drawLine(dots[i],dots[j]);
+                }
+            }
         dots[i].drawDot();
         }
-    }, 30)
+    }, 30) 
 }
     //构造函数
     function Dot(x,y,vx,vy,dotColor,lineColor){
@@ -40,7 +45,7 @@ window.onload=function(){
         ctx.save();
         ctx.beginPath();
         ctx.fillStyle = this.dotColor;
-        ctx.arc(this.x,this.y,10,0,Math.PI*2,false);
+        ctx.arc(this.x,this.y,1,0,Math.PI*2,false);
         ctx.fill();
         ctx.restore();
     }
@@ -60,7 +65,7 @@ window.onload=function(){
             this.vy=-this.vy;
         }
     }
-    for(var i=0;i<1000;i++){
+    for(var i=0;i<250;i++){
         dots.push(createdDots(getColor(),getColor()));
     }
     //随机颜色
@@ -68,12 +73,38 @@ window.onload=function(){
         var r=parseInt(Math.random()*255);
         var g=parseInt(Math.random()*255);
         var b=parseInt(Math.random()*255);
-        var a=parseInt(Math.random()+0.4);
+        var a=Math.random()+.4;
 
         return "rgba("+r+","+g+","+b+","+a+")";
     }
     function getDistance(dot1,dot2) {
         return parseInt(Math.sqrt((dot1.x-dot2.x)*(dot1.x-dot2.x)+(dot1.y-dot2.y)*(dot1.y-dot2.y)))
     }
-
+    function drawLine(dot1,dot2) {
+        ctx.beginPath();
+        ctx.strokeStyle = dot1.lineColor;
+        ctx.lineWidth =.2;
+        ctx.moveTo(dot1.x,dot1.y);
+        ctx.lineTo(dot2.x,dot2.y);
+        ctx.stroke();
+    }
+//     function drawLine(){
+//     var dot1;
+//     var dot2;
+//     for (var i = 0; i < dots.length; i++) {
+//         dot1 = dots[i];
+//         for(var j = i+1; j< dots.length; j++){
+//             dot2= dots[j];
+//             if(getDistance(dot1,dot2)<200 && getDistance(dot1,mousePosition)<200 && getDistance(dot2,mousePosition)<200 ){
+//                 ctx.beginPath();
+//                 ctx.strokeStyle = dot1.lineColor;
+//                 ctx.lineWidth = 0.2;
+//                 ctx.moveTo(dot1.x,dot1.y);
+//                 ctx.lineTo(dot2.x,dot2.y);
+//                 ctx.stroke();
+//             }
+//         }
+//         dot1.drawDot();
+//     }
+// }
 

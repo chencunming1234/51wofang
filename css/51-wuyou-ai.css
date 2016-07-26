@@ -6,7 +6,7 @@
     z-index: 1;
     clear: both;
     padding: 60px 0 80px 0;
-    height: 60px;
+    text-align: center;
 }
 .wuyou-ai:nth-child(even){
     background-color: #f5f8fb;
@@ -124,6 +124,178 @@ canvas{
         transform: rotate(-360deg);
     }
 }
+.wuyou-ai .wuyou-ai-title{
+    text-align: center;
+    padding: 0 0 30px;
+    line-height: 1.65;
+
+}
+.wuyou-ai .wuyou-ai-title h2{
+    color: #2d404d;
+    font-size: 30px;
+}
+.wuyou-ai .wuyou-ai-title p{
+    font-size: 16px;
+}
+.wuyou-ai-content{
+    width: 1200px;
+    display: table;
+    margin: 0 auto;
+}
+.wuyou-ai-hugo1 ul li{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 160px;
+}
+.wuyou-ai-hugo1 ul li:before{
+    position: absolute;
+    background: url(../images/section1-1.png) no-repeat left top;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 100px;
+    height: 65px;
+    margin: auto;
+    background-size: cover;
+}
+.wuyou-ai-hugo1 ul li:nth-child(2):before{
+    background-position: -100px top;
+}
+.wuyou-ai-hugo1 ul li:nth-child(3):before{
+    background-position: -200px top;
+}
+.wuyou-ai-hugo1 ul li:nth-child(4):before{
+    background-position: -300px top;
+}
+.wuyou-ai-hugo1 ul li:nth-child(5):before{
+    background-position: -400px top;
+}
+.wuyou-ai-hugo1 h3{
+    margin-top: 90px;
+    font-size: 18px;
+}
+.wuyou-ai-hugo1 p{
+    font-size: 14px;
+    color: #818f99;
+}
+.wuyou-ai-hugo-cando{
+    padding: 70px;
+    box-sizing: border-box;
+}
+.wuyou-ai-hugo-cando li{
+    width: 50%;
+    height: 350px;
+    float: left;
+    position: relative;
+}
+.wuyou-ai-hugo-cando li p{
+    margin-top: 280px;
+    padding: 20px 80px 0;
+    text-align: center;
+    color: #818f99;
+    line-height: 1.65;
+}
+.wuyou-ai-hugo-cando li:before{
+    content: "";
+    width: 350px;
+    height: 280px;
+    position: absolute;
+    left: 0;right: 0;top: 0;
+    margin: 0 auto;
+}
+.wuyou-ai-hugo-cando li:nth-child(1):before{
+    background: url(../images/section2-1.png) no-repeat;
+    background-size: cover;
+}
+.wuyou-ai-hugo-cando li:nth-child(2):before{
+    background: url(../images/section2-1.png) no-repeat;
+    background-size: cover;
+}
+.wuyou-ai-hugo-cando li:nth-child(3):before{
+    background: url(../images/section2-3.png) no-repeat;
+    background-size: cover;
+}
+.wuyou-ai-hugo-cando li:nth-child(4):before{
+    background: url(../images/section2-4.png) no-repeat;
+    background-size: cover;
+}
+
+.wuyou-ai-dingzi{
+    box-sizing: border-box;
+    padding: 50px 150px 0;
+}
+.wuyou-ai-dingzi span{
+    margin: 0 10px;
+}
+.wuyou-ai-dingzi img{
+    display: block;width: 100%;
+    margin-bottom: 20px;
+}
+.wuyou-ai-dingzi .ai-img1,.wuyou-ai-dingzi .ai-img3{
+    width: 210px;
+    display: inline-block;
+}
+.wuyou-ai-dingzi .ai-img2{
+    width: 373px;
+    display: inline-block;
+}
+.wuyou-ai-five{
+    width: 670px;margin: 0 auto;
+}
+.wuyou-ai-five p {
+    position: relative;
+    padding-left: 120px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    border-left: 1px solid #677c8b;
+}
+.wuyou-ai-five p em{
+    font-style: normal;
+    font-size: 65px;
+    font-weight: 200;
+    position: absolute;
+    left: 80px;
+    top: -6px;
+    line-height: 1;
+}
+.wuyou-ai-five p span{
+    font-size: 14px;
+    display: block;
+    color: #677c8b;
+    text-align: left;
+}
+.wuyou-ai-five .five-title{
+    font-size: 16px;
+    color: #2d404d;
+    padding-bottom: 10px;
+}
+.wuyou-ai-five p:before{
+    content: "";
+    width: 63px;
+    height: 63px;    
+    position: absolute;
+    top: -2px;
+    left: -32px;
+    background: url(../images/section4-1.png) no-repeat left top;
+    background-size: cover;
+}
+.wuyou-ai-five p:last-child{
+    border: none;
+}
+.wuyou-ai-five p:nth-child(2):before{
+    background-position: -63px top
+}
+.wuyou-ai-five p:nth-child(3):before{
+    background-position: -126px top
+}
+.wuyou-ai-five p:nth-child(4):before{
+    background-position: -189px top
+}
+.wuyou-ai-five p:nth-child(5):before{
+    background-position: -252px top
+}
 @media screen and (max-width: 767px){
     .wuyou-ai-header{
         height: 250px;
@@ -169,5 +341,112 @@ canvas{
         width: 210px;
         display: none;
         transform: translateX(-50%);
+    }
+    .wuyou-ai .wuyou-ai-title h2{
+        font-size: 20px;
+    }
+    .wuyou-ai .wuyou-ai-title p{
+        font-size: 14px;
+    }
+    .wuyou-ai-hugo1 ul {
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        width: 100%;
+    }
+    .wuyou-ai{
+        padding: 20px 0;
+    }
+    .wuyou-ai-content{
+        width: 100%;
+        overflow: hidden;
+    }
+    .wuyou-ai-hugo1 ul li{
+        float: none;
+        display: inline-block;
+        height: 70px;
+        box-sizing: border-box;
+        padding-left: 90px;
+        text-align: left;
+        width: auto;
+    }
+    .wuyou-ai-hugo1 ul li h3{
+        margin: 0;
+    }
+    .wuyou-ai-hugo1 ul li:before{
+        width: 70px;
+        height: 50px;
+        left: -100px;
+        background-size: 350px 50px;
+    }
+    .wuyou-ai-hugo1 ul li:nth-child(2):before{
+        background-position: -70px top;
+    }
+    .wuyou-ai-hugo1 ul li:nth-child(3):before{
+        background-position: -140px top;
+    }
+    .wuyou-ai-hugo1 ul li:nth-child(4):before{
+        background-position: -210px top;
+    }
+    .wuyou-ai-hugo1 ul li:nth-child(5):before{
+        background-position: -280px top;
+    }
+    .wuyou-ai-hugo-cando{
+        padding: 0;
+    }
+    .wuyou-ai-hugo-cando li{
+        width: 100%;
+        width: auto;
+        height: 120px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .wuyou-ai-hugo-cando li p{
+        text-align: left;
+        margin-top:0;
+        padding: 5px 0 0 130px
+    }
+    .wuyou-ai-hugo-cando li:before{
+        width: 110px;
+        height: 90px;
+        left: 10px;
+        margin: 0;
+    }
+    .wuyou-ai-dingzi{
+        white-space: nowrap;
+        padding: 0;
+    }
+    .wuyou-ai-five{
+        padding: 20px 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .wuyou-ai-five p{
+        padding-left: 60px;
+        margin-left: 25px;
+        padding-bottom:20px;
+    }
+    .wuyou-ai-five p em{
+        font-size: 24px;
+        left: 40px;
+        top: 2px;
+    }
+    .wuyou-ai-five p:before{
+        width: 50px;
+        height: 50px;
+        left: -25px;
+        top: 0;
+    }
+    .wuyou-ai-five p:nth-child(2):before{
+        background-position: -50px top;
+    }
+    .wuyou-ai-five p:nth-child(3):before{
+        background-position: -100px top;
+    }
+    .wuyou-ai-five p:nth-child(4):before{
+        background-position: -150px top;
+    }
+    .wuyou-ai-five p:nth-child(5):before{
+        background-position: -200px top;
     }
 }
