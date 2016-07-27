@@ -1,3 +1,16 @@
+//左侧
+$(function(){
+    $(".list-classify-dist").click(function(){
+        $(this).next().toggle();
+    });
+    $(".list-classify-item li a").click(function(){
+        $(".list-classify-item li a").removeClass("active");
+        $(this).addClass("active");
+        $(this).parents(".list-classify-item").prev().html($(this).html());
+        $(this).parents(".list-classify-item").hide();
+    })
+})
+//地图
 $(document).ready(function() {
     var map = new BMap.Map("myMap");
     map.centerAndZoom(new BMap.Point(110.9584, 32.344451), 6);

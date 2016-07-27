@@ -87,6 +87,18 @@
     background: #eee;
     color: #68b4f2!important;
 }
+.person-ctrl{
+    display: none;
+}
+.person-ctrl ul:before{
+    left: 21px;
+}
+.person-ctrl ul{
+    left: -33px;
+}
+.person-ctrl ul a{
+    padding-left: 32px;
+}
 /*导航中的登陆注册按钮*/
 .main-nav .regist a{
     border: 1px solid #68b4f2;
@@ -111,6 +123,10 @@
 .main-nav .login:hover a{
     background: #68b4f2;   
     color: #fff;
+}
+/*登陆注册的状态*/
+.regist,.login{
+    /*display: none;*/
 }
 /*mmenu的菜单*/
 #menu-mark{
