@@ -14,7 +14,7 @@
 .vr-video-src{
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background: black;
 }
 .vr-video-search{
@@ -249,6 +249,9 @@
     outline: none;
     box-shadow: inset 0 1px 4px rgba(0,0,0,0.15);
 }
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    right: 20px;
+}
 /*vr看房行业介绍*/
 .vr-watch-introduce{
     width: 1200px;
@@ -364,11 +367,46 @@
     }
 }
 @media screen and (max-width: 767px){
+    .vr-video{
+        height: 300px;
+    }
     .vr-watch-lists{
         width: 100%;
     }
     .vr-list-info{
         width: 100%;
         margin: 15px 0;
+    }
+    .swiper-container{
+        height: 200px;
+    }
+    .swiper-slide img{
+        height: 200px;
+    }
+    .swiper-pagination-bullet-active{
+        width: 8px;height: 8px;
+    }
+    .swiper-pagination-bullet{
+        width: 8px;height: 8px;
+    }
+    .vr-watch-zoom{
+        height: 200px;
+    }
+    .vr-watch-zoom-bg{
+        height: 200px;
+    }
+    .vr-watch-zoom-text p{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .vr-watch-zoom-text p strong{
+        font-size: 16px;
+    }
+    .vr-watch-zoom-text span{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .vr-partner span{
+        font-size: 14px;
     }
 }

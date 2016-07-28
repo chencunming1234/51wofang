@@ -64,6 +64,7 @@
 .list-content-wrap{
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .list-content-inner{
     width: 1230px;
@@ -219,7 +220,6 @@
     }
 }
 @media screen and (max-width: 767px){
-
     .list-classify{
         width: 25vw;
         padding: 0;
