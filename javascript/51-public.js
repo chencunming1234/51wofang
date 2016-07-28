@@ -14,7 +14,6 @@ $(document).ready(function () {
     })
 })
 $(function(){
-
     var judge=window.sessionStorage.getItem("token");
     if(judge){
         $(".regist").hide();

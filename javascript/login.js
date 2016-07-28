@@ -1,5 +1,5 @@
 $(function(){
-    // window.sessionStorage.setItem("token","1131");
+    window.sessionStorage.setItem("token","1131");
 })
 $(function(){
     $("#login-phone").on("input",function(){
