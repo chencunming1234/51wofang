@@ -20,11 +20,13 @@ $(function(){
         $(".regist").hide();
         $(".login").hide();
         $(".person-ctrl").show();
+        $(".signout").show();
     }
     $(".signout").click(function(){
         window.sessionStorage.removeItem('token');
         $(".regist").show();
         $(".login").show();
         $(".person-ctrl").hide();
+        $(".signout").hide();
     })
 })  

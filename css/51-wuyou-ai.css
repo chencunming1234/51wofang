@@ -22,8 +22,8 @@
     height: 85px;
     top: 60px;
     background: url(../images/header-title-1.png) no-repeat center top;
-    animation:fade-down 1s ease 2.25s;
-    -webkit-animation:fade-down 1s ease 2.25s;
+    animation:fade-down 1s ease 1s;
+    -webkit-animation:fade-down 1s ease 1s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 
@@ -34,8 +34,8 @@
     height: 44px;
     top: 610px;
     background: url(../images/header-title-2.png) no-repeat center top;
-    animation:fade-up 1s ease 2.7s;
-    -webkit-animation:fade-up 1s ease 2.7s;
+    animation:fade-up 1s ease 1s;
+    -webkit-animation:fade-up 1s ease 1s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
@@ -58,15 +58,16 @@
     position: absolute;
     left: 50%;
     top: 220px;
-    transform: translateX(-50%);
+    margin-left: -210px;
     display: none;
 }
 .ai-header-icon4{
     position: absolute;
     left: 50%;
     top: 220px;
-    transform: translateX(-50%);
+    margin-left: -100px;
     z-index: 2;
+    animation:hugoshow 1s;
 }
 canvas{
     position: absolute;
@@ -122,6 +123,16 @@ canvas{
     100%{
         -webkit-transform:rotate(-360deg);
         transform: rotate(-360deg);
+    }
+}
+@keyframes hugoshow{
+    0%{
+        -webkit-transform:scale3d(0.1,0.1,1);
+        transform: scale3d(0.1,0.1,1);
+    }
+    100%{
+        -webkit-transform:scale3d(1,1,1);
+        transform: scale3d(1,1,1);
     }
 }
 .wuyou-ai .wuyou-ai-title{
@@ -303,11 +314,11 @@ canvas{
     }
     .fade-down{
         top: 10px;
-        background-size: 70%;
+        background-size: 60%;
         height: 70px;
     }
     .fade-up{
-        top: 200px;
+        top: 240px;
         background-size: 50%;
         height: 40px;
         margin: 0 auto;
@@ -331,16 +342,18 @@ canvas{
         width: 210px;
         left: 50%;
         top: 30px;
-        transform: translateX(-50%);
+        z-index: 2;
+        margin-left: -105px;
         display: block;
+        animation:hugoshow 1s;
     }
     .ai-header-icon4{
         position: absolute;
         left: 50%;
         top: 220px;
         width: 210px;
+        margin-left: -105px;
         display: none;
-        transform: translateX(-50%);
     }
     .wuyou-ai .wuyou-ai-title h2{
         font-size: 20px;
