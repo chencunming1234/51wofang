@@ -24,9 +24,18 @@ $(function() {
         }
     })    
 })
+
 $(function(){
+
+})
+$(function(){
+
+
+
     var a="a0",b="b0",c="c0",d="d0",e="e0";
     $(".list-classify-item li a").click(function(){
+        $(".list-classify-item li a").removeClass("active");
+        $(this).addClass("active");
         var dataS=$(this)[0].dataset.s;
         var ds=dataS.substr(0,1);
         var dd=dataS.substr(1);
@@ -38,8 +47,9 @@ $(function(){
             case "e":e="e"+dd;break;
         }
         var sqlUrl=a+b+c+d+e;
-        console.log(sqlUrl);
-
+        console.log(sqlUrl);      
+        // $(this).parents(".list-classify-item").prev().html($(this).html());
+        // $(this).parents(".list-classify-item").hide();
     })
 })
 
