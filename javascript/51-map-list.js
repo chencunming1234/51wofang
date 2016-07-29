@@ -1,6 +1,6 @@
 //左侧
-var a="a0",b="b0",c="c0",d="d0",e="e0";
-var dist=[];
+var a="a00",b="b00",c="c00",d="d00",e="e00";
+var sqlUrl;
 $(function(){
     $(".list-classify-dist").click(function(){
         $(this).next().toggle();
@@ -18,15 +18,17 @@ $(function(){
         var dataS=$(this)[0].dataset.s;
         var ds=dataS.substr(0,1);
         var dd=dataS.substr(1);
+        if(dd<10){
+            dd="0"+dd;
+        }
         switch (ds) {
             case "b":b="b"+dd;break;
             case "c":c="c"+dd;break;
             case "d":d="d"+dd;break;
             case "e":e="e"+dd;break;
         }
-        var sqlUrl=a+b+c+d+e;
+        sqlUrl=a+b+c+d+e;
         console.log(sqlUrl);
-
     })
 })
 //地图
@@ -38,7 +40,7 @@ $(document).ready(function() {
     // map.disableDragging();
     map.addControl(new BMap.NavigationControl());
     map.addEventListener("click", function (e) {
-        console.log(e.point.lng + ", " + e.point.lat);
+        // console.log(e.point.lng + ", " + e.point.lat);
     });
     function square(center,length,city,innerNum){
         this._center=center;
@@ -74,7 +76,7 @@ $(document).ready(function() {
             this.style.zIndex=0;
         });
         div.addEventListener("click", function () {
-            console.log(map.getBounds())
+            // console.log(map.getBounds())
             if(city != ""){
                 map.centerAndZoom(city,11);      // 用城市名设置地图中心点
             }
@@ -89,16 +91,16 @@ $(document).ready(function() {
         this._div.style.top=position.y-this._length/2+"px";
     };   
     var mapArr = [
-        [{area:'北京'},{lng:116.404,lat:39.915},{num:15},{a:"a0"}],
-        [{area:'成都'},{lng:104.144,lat:30.588},{num:3},{a:"a1"}],
-        [{area:'昆明'},{lng:102.845,lat:24.802},{num:2},{a:"a2"}],
-        [{area:'郑州'},{lng:113.623,lat:34.718},{num:2},{a:"a3"}],
-        [{area:'阜阳'},{lng:115.801,lat:32.886},{num:2},{a:"a4"}],
-        [{area:'武汉'},{lng:114.373,lat:30.451},{num:1},{a:"a5"}],
-        [{area:'长沙'},{lng:112.919,lat:28.276},{num:2},{a:"a6"}],
-        [{area:'广州'},{lng:113.272,lat:23.147},{num:2},{a:"a7"}],
-        [{area:'深圳'},{lng:114.043,lat:22.542},{num:1},{a:"a8"}],
-        [{area:'汕头'},{lng:116.669,lat:23.371},{num:2},{a:"a9"}],
+        [{area:'北京'},{lng:116.404,lat:39.915},{num:15},{a:"a00"}],
+        [{area:'成都'},{lng:104.144,lat:30.588},{num:3},{a:"a01"}],
+        [{area:'昆明'},{lng:102.845,lat:24.802},{num:2},{a:"a02"}],
+        [{area:'郑州'},{lng:113.623,lat:34.718},{num:2},{a:"a03"}],
+        [{area:'阜阳'},{lng:115.801,lat:32.886},{num:2},{a:"a04"}],
+        [{area:'武汉'},{lng:114.373,lat:30.451},{num:1},{a:"a05"}],
+        [{area:'长沙'},{lng:112.919,lat:28.276},{num:2},{a:"a06"}],
+        [{area:'广州'},{lng:113.272,lat:23.147},{num:2},{a:"a07"}],
+        [{area:'深圳'},{lng:114.043,lat:22.542},{num:1},{a:"a08"}],
+        [{area:'汕头'},{lng:116.669,lat:23.371},{num:2},{a:"a09"}],
         [{area:'扬州'},{lng:119.456,lat:32.374},{num:1},{a:"a10"}],
         [{area:'苏州'},{lng:120.587,lat:31.298},{num:1},{a:"a11"}],
         [{area:'上海'},{lng:121.492,lat:31.912},{num:4},{a:"a12"}],
@@ -114,12 +116,13 @@ $(document).ready(function() {
                     distarr.push(mapArr[i][3].a);
                 }
             }
-            dist=distarr;
-            console.log(dist);
+            a=distarr.join(",");
+            sqlUrl=a+b+c+d+e;
+            console.log(sqlUrl);
         }
     addOverlay(mapArr);      
     map.addEventListener("dragging", function(){
-        addOverlay(mapArr); 
+        addOverlay(mapArr);
     })
     // addOverlay(mapArr);
         if (map.getZoom()<6) {
