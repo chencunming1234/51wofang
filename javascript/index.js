@@ -15,7 +15,6 @@ $(document).ready(function(){
     
 })
 $(function(){
-    window.sessionStorage.setItem("token","1111");
     var mySwiper=new Swiper(".swiper-container",{
         loop:"true",
         autoplay:7000,
