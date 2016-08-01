@@ -8,6 +8,7 @@ $(document).ready(function() {
 $(document).ready(function () {
     $("#menu-mark").on("click",function(){
         $(this).toggleClass("is-active");
+        $("#my-menu").show();
     });
     $("#mm-blocker").on("click",function () {
         $("#menu-mark").toggleClass("is-active");
