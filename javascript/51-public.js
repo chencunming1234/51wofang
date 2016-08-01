@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
     $("#mm-blocker").on("click",function () {
         $("#menu-mark").toggleClass("is-active");
-    })
+    });
 })
 $(function(){
     var judge=window.sessionStorage.getItem("token");
